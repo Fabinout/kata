@@ -71,7 +71,7 @@ public class CalculetteBonusEcologiqueShould {
     @Test
     public void prime_selon_batterie_pour_scooter_electrique() {
         Montant prixAchat = new Montant(new BigDecimal("10000"));
-        Moteur moteur = new Moteur(4);
+        Moteur moteur = MoteurFactory.of(4);
         Vehicule vehicule = new Scooter(moteur, prixAchat);
 
         Montant prime = calculette.calculePrime(vehicule);
@@ -82,7 +82,7 @@ public class CalculetteBonusEcologiqueShould {
     @Test
     public void prime_selon_batterie_et_prix_max_pour_scooter_electrique() {
         Montant prixAchat = new Montant(new BigDecimal("1000"));
-        Moteur moteur = new Moteur(4);
+        Moteur moteur = MoteurFactory.of(4);
         Vehicule vehicule = new Scooter(moteur, prixAchat);
 
         Montant prime = calculette.calculePrime(vehicule);
@@ -93,12 +93,45 @@ public class CalculetteBonusEcologiqueShould {
     @Test
     public void sans_prime_pour_scooter_electrique_avec_batterie_au_plomb() {
         Montant prixAchat = new Montant(new BigDecimal("10000"));
-        Moteur moteur = new MoteurAuPlomb(4);
+        Moteur moteur = MoteurFactory.ofPlomb(4);
         Vehicule vehicule = new Scooter(moteur, prixAchat);
 
         Montant prime = calculette.calculePrime(vehicule);
 
         verifierMontant(prime, "0");
+    }
+
+    @Test
+    public void prime_selon_batterie_en_deça_de_la_prime_maximale() {
+        Montant prixAchat = new Montant(new BigDecimal("10000"));
+        Moteur moteur = MoteurFactory.of(3);
+        Vehicule vehicule = new Scooter(moteur, prixAchat);
+
+        Montant prime = calculette.calculePrime(vehicule);
+
+        verifierMontant(prime, "750");
+    }
+
+    @Test
+    public void prime_selon_batterie_avec_faible_puissance() {
+        Montant prixAchat = new Montant(new BigDecimal("10000"));
+        Moteur moteur = MoteurFactory.of(2);
+        Vehicule vehicule = new Scooter(moteur, prixAchat);
+
+        Montant prime = calculette.calculePrime(vehicule);
+
+        verifierMontant(prime, "100");
+    }
+
+    @Test
+    public void prime_selon_batterie_avec_faible_puissance_et_petit_prix() {
+        Montant prixAchat = new Montant(new BigDecimal("100"));
+        Moteur moteur = MoteurFactory.of(2);
+        Vehicule vehicule = new Scooter(moteur, prixAchat);
+
+        Montant prime = calculette.calculePrime(vehicule);
+
+        verifierMontant(prime, "100");
     }
 
     private void verifierMontant(Montant prime, String montantAttendu) {

@@ -14,9 +14,14 @@ public class CalculetteBonusEcologique {
     }
 
     private Montant calculePrimeVehiculePropre(Vehicule vehicule) {
+        Montant montant = new Montant(vehicule.calculerPrimeBrute());
+        if (!vehicule.primeLimitéeParPrixAchat()) {
+            return montant;
+        }
         Montant primeMaximaleSelonPrix = getPrimeMaximaleSelonPrix(vehicule);
-        return new Montant(vehicule.calculerPrimeBrute().min(primeMaximaleSelonPrix.getMontantBrut()));
+        return montant.min(primeMaximaleSelonPrix);
     }
+
 
 
     private Montant getPrimeMaximaleSelonPrix(Vehicule vehicule) {

@@ -28,4 +28,11 @@ public class Montant {
         BigDecimal tauxApplique = this.montantBrut.multiply(taux);
         return new Montant(tauxApplique);
     }
+
+    public Montant min(Montant montant) {
+        if (montantBrut.compareTo(montant.getMontantBrut()) < 0) {
+            return this;
+        }
+        return montant;
+    }
 }

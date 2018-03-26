@@ -28,4 +28,9 @@ public abstract class Vehicule4Roues implements Vehicule {
     public boolean isVehiculePropre() {
         return tauxEmission <= SEUIL_TAUX_EMISSION_CO2;
     }
+
+    @Override
+    public boolean primeLimitéeParPrixAchat() {
+        return true;
+    }
 }

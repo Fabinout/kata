@@ -9,4 +9,6 @@ public interface Vehicule {
     Montant getPrixAchat();
 
     boolean isVehiculePropre();
+
+    boolean primeLimitéeParPrixAchat();
 }
