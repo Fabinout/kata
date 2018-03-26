@@ -24,12 +24,7 @@ public class Scooter implements Vehicule {
     }
 
     @Override
-    public int getTauxEmission() {
-        return 0;
-    }
-
-    @Override
     public boolean isVehiculePropre() {
-        return true;
+        return !moteur.hasPlomb();
     }
 }
