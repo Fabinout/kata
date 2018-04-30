@@ -24,13 +24,9 @@ class UnSeulChiffreNonZeroPattern : Pattern<String> {
 }
 
 class ConsecutivePattern(private val pas: Int) : Pattern<String> {
-
     override fun match(kilometrage: String): Boolean {
-        kilometrage.reduce { chiffrePrecedent, chiffre ->
-            if (chiffre - chiffrePrecedent == pas) {
-                chiffre
-            } else return false
-        }
-        return true
+        return kilometrage
+                .windowedSequence(2, 1)
+                .all { s -> s[1] - s[0] == pas }
     }
 }
