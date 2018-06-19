@@ -23,8 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb0ce47a-3787-423e-a0c1-27be98c91b55" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Task.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TaskKtTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kata/Expr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kata/META-INF/kata.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kata/META-INF/kata.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kata/Num.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kata/Sum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kata/TaskKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kata/TaskKtTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Brainfuck.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Brainfuck.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BrainfuckKtTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BrainfuckKtTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,20 +43,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Task.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Task.kt">
+      <file leaf-file-name="Brainfuck.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Brainfuck.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="4" selection-start-column="4" selection-end-column="4" />
+            <state relative-caret-position="58">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskKtTest.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TaskKtTest.kt">
+      <file leaf-file-name="BrainfuckKtTest.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BrainfuckKtTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="184">
+              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -79,9 +86,11 @@
       <list>
         <option value="$PROJECT_DIR$/test/TestSmartCasts.kt" />
         <option value="$PROJECT_DIR$/src/kotlin/Task.kt" />
-        <option value="$PROJECT_DIR$/src/Task.kt" />
         <option value="$PROJECT_DIR$/src/TaskKtTest.java" />
+        <option value="$PROJECT_DIR$/src/Task.kt" />
         <option value="$PROJECT_DIR$/src/TaskKtTest.kt" />
+        <option value="$PROJECT_DIR$/src/Brainfuck.kt" />
+        <option value="$PROJECT_DIR$/src/BrainfuckKtTest.kt" />
       </list>
     </option>
   </component>
@@ -131,6 +140,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -165,21 +175,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BrainfuckKtTest.testNum">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="TaskKtTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BrainfuckKtTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kata" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TaskKtTest" />
+      <option name="MAIN_CLASS_NAME" value="BrainfuckKtTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="BrainfuckKtTest.testNum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kata" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BrainfuckKtTest" />
+      <option name="METHOD_NAME" value="testNum" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -242,9 +269,14 @@
       <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.BrainfuckKtTest" />
+      <item itemvalue="JUnit.BrainfuckKtTest.testNum" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TaskKtTest" />
+        <item itemvalue="JUnit.BrainfuckKtTest.testNum" />
+        <item itemvalue="JUnit.BrainfuckKtTest" />
       </list>
     </recent_temporary>
   </component>
@@ -262,8 +294,19 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TaskKtTest_testNum - 2018.06.18 at 13h 24m 16s.xml">
+      <configuration name="TaskKtTest.testNum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TaskKtTest_testNum - 2018.06.18 at 13h 24m 27s.xml">
+      <configuration name="TaskKtTest.testNum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BrainfuckKtTest_testNum - 2018.06.18 at 13h 29m 46s.xml">
+      <configuration name="BrainfuckKtTest.testNum" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="749000" />
+    <option name="totallyTimeSpent" value="1709000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -288,7 +331,7 @@
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32985386" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="SonarLint" />
@@ -308,6 +351,18 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/BrainfuckKtTest.kt</url>
+          <line>6</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kata.iml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -319,14 +374,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TaskKtTest.kt">
+    <entry file="file://$PROJECT_DIR$/src/BrainfuckKtTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TaskKtTest.kt">
+    <entry file="file://$PROJECT_DIR$/src/BrainfuckKtTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
@@ -343,17 +398,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task.kt">
+    <entry file="file://$PROJECT_DIR$/src/BrainfuckKtTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        <state relative-caret-position="322">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TaskKtTest.kt">
+    <entry file="file://$PROJECT_DIR$/src/Brainfuck.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kotlin/Task2.kt" />
+    <entry file="file://$PROJECT_DIR$/src/BrainfuckKtTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BrainfuckKtTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestSmartCasts.kt" />
+    <entry file="file://$PROJECT_DIR$/src/BrainfuckKtTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Brainfuck.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -374,7 +459,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

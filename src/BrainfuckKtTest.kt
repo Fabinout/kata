@@ -1,11 +1,9 @@
 import org.junit.Test
-import org.junit.Assert
 
-class TaskKtTest{
+class BrainfuckKtTest{
 
     @Test fun testNum() {
-        eval("test")
-        assert(true)
+        val answer = eval("test")
+        assert(answer == "test")
     }
-
 }
